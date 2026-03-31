@@ -201,8 +201,8 @@ hr {
   margin-bottom: 20px;
 }
 .paper-container .image {
-  flex: 1;
-  max-width: 120px;
+  flex: 0 0 160px;
+  max-width: 160px;
   text-align: top;
 }
 .paper-container .text {

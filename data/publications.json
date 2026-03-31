@@ -24,6 +24,34 @@
     "show": true
   },
   {
+    "id": "RoboVIP",
+    "title": "RoboVIP: Multi-View Video Generation with Visual Identity Prompting Augments Robot Manipulation",
+    "authors": [
+      {"name": "Boyang Wang", "isCoFirst": true},
+      {"name": "Haoran Zhang", "isCoFirst": true},
+      {"name": "Shujie Zhang", "isCoFirst": true},
+      {"name": "Jinkun Hao"},
+      {"name": "Mingda Jia", "isHighlight": true},
+      {"name": "Qi Lv"},
+      {"name": "Yucheng Mao"},
+      {"name": "Zhaoyang Lyu"},
+      {"name": "Jia Zeng"},
+      {"name": "Xudong Xu"},
+      {"name": "Jiangmiao Pang"}
+    ],
+    "venue": "Arxiv 2026",
+    "venueType": "arxiv",
+    "image": "images/robovip.png",
+    "links": {
+      "paper": "https://arxiv.org/abs/2601.05241",
+      "project": "https://robovip.github.io/RoboVIP/",
+      "code": "https://github.com/RoboVIP/RoboVIP"
+    },
+    "description": "- We propose RoboVIP, a multi-view video generation framework that augments robot manipulation with visual identity prompting.",
+    "year": 2026,
+    "show": true
+  },
+  {
     "id": "InterProDa",
     "title": "Orchestrating the Symphony of Prompt Distribution Learning for Human-Object Interaction Detection",
     "authors": [

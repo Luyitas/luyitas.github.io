@@ -128,7 +128,7 @@ function createPublicationHTML(pub) {
     miscHTML = `<a href="${pub.misc.link}" class="buttom misc-button">${pub.misc.text}</a>\n      `;
   }
 
-  const coFirstNote = '<br>\n      ';
+  const coFirstNote = '';
 
   return `
     <div class="paper-container">
@@ -141,6 +141,7 @@ function createPublicationHTML(pub) {
         </div>
         <div class="paper-bottom-section">
           <p>${coFirstNote}${authorsHTML}</p>
+          ${pub.description ? `<p class="paper-description">${pub.description}</p>` : ''}
           <p class="paper-links">
             <span class="${pub.venueType}">${pub.venue}</span>
             ${linksHTML}${miscHTML}

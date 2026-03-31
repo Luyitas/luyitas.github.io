@@ -19,6 +19,7 @@
       "paper": "",
       "project": "https://egosimulator.github.io/"
     },
+    "description": "- We first introduce a scalable egocentric world simulator that generates in-the-wild embodied interactions.",
     "year": 2026,
     "show": true
   },
@@ -37,6 +38,7 @@
     "links": {
       "paper": "https://arxiv.org/abs/2412.08506"
     },
+    "description": "- We first introduce Prompt Distribution Learning to represent and discriminate uncommon HOI visual patterns.",
     "year": 2025,
     "show": true
   },
@@ -55,6 +57,7 @@
     "links": {
       "paper": "https://arxiv.org/abs/2412.09050"
     },
+    "description": "- We discuss background learning for HOI detection.",
     "year": 2025,
     "show": true
   }

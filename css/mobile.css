@@ -221,8 +221,15 @@ hr {
 }
 
 .paper-container p {
-  margin-top: 6px;
+  margin-top: 2px;
   margin-bottom: 0px;
+}
+
+.paper-description {
+  font-size: 12px;
+  color: #888888;
+  margin-top: 0 !important;
+  margin-bottom: 4px !important;
 }
 
 .paper-container .paper-links {

@@ -1,0 +1,642 @@
+/* Using Helvetica font family for clean, modern typography */
+
+a {
+  color: #1e6fb1;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:focus,
+a:hover {
+  color: #ff6200;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+/* Icon styling */
+.fas, .fab, .far {
+  transition: transform 0.2s ease;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.papertitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Main content wrapper - replaces old table layout */
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* Sections: offset for fixed nav bar */
+.main-content section {
+  scroll-margin-top: 50px;
+  padding-top: 10px;
+}
+
+/* Section headings */
+.main-content section > h2 {
+  padding: 20px;
+}
+
+/* Bio section: remove extra top padding, main-content already handles nav clearance */
+#Top {
+  padding-top: 0;
+}
+
+/* Footer */
+footer {
+  padding: 0 20px 20px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: small;
+}
+
+.copyright {
+  font-size: medium;
+  color: rgb(143, 143, 143);
+}
+
+/* Nav dot color indicators */
+.nav-dot {
+  font-size: 1.6em;
+}
+
+.nav-dot--brown { color: #8B4513; }
+.nav-dot--gold  { color: #FFD700; }
+.nav-dot--blue  { color: #0000FF; }
+
+/* Spotlight highlight in news */
+.highlight-spotlight {
+  color: rgb(255, 170, 0);
+}
+
+/* Link icons in bio buttons */
+.link-icon {
+  vertical-align: text-bottom;
+}
+
+/* Scroll-to-top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border: none;
+  padding: 0;
+}
+
+.desktop-component ul,
+.mobile-component ul {
+  width: 100%;
+  position: fixed;
+  list-style: none;
+  background-color: #ffffff;
+  text-align:center;
+  padding-inline-start: 0%;
+  margin-block-start: 0%;
+  z-index: 999;
+}
+
+.desktop-component ul li,
+.mobile-component ul li {
+  display: inline-block;
+}
+
+.desktop-component ul li a,
+.mobile-component ul li a {
+  padding: 10px;
+  display: block;
+  color: #454545;
+}
+
+.desktop-component ul li a:hover,
+.mobile-component ul li a:hover {
+  color: #6493df;
+}
+
+@media (max-width: 1240px) {
+  .desktop-component {
+    display: none;
+  }
+
+  .mobile-component {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .desktop-component {
+    display: block;
+  }
+
+  .mobile-component {
+    display: none;
+  }
+}
+
+/* Shared styles for all venue badge types */
+.AAAI, .insub, .arxiv, .accepted, .award {
+  padding: 6px 12px;
+  display: inline-block;
+  color: #ffffff;
+  flex-shrink: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+}
+
+.AAAI      { background-color: #4192e8; }
+.insub     { background-color: #858585; }
+.arxiv     { background-color: #da4242; }
+.accepted  { background-color: #22c55e; }
+.award     { background-color: #f58c0b; }
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(231, 231, 231);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.paper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+.paper-container .image {
+  flex: 1;
+  max-width: 120px;
+  text-align: top;
+}
+.paper-container .text {
+  flex: 1;
+  padding-left: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+}
+.paper-container img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  border: 4px solid #ffffff;
+}
+
+.paper-container:hover {
+  background-color: #f1f1f1;
+}
+
+.paper-container .papertitle {
+  display: inline-block;
+  color: #333333;
+  transition: all 0.3s ease;
+}
+
+.paper-container:hover .papertitle {
+  color: #222222;
+}
+
+.paper-container p {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.paper-container .paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.paper-title-section {
+  flex: 0 0 auto;
+}
+
+.paper-bottom-section {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Experience section styling */
+.experience-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.experience-item {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.exp-item-bar {
+  width: 5px;
+  flex-shrink: 0;
+  background-color: #d0d0d0;
+  transition: background-color 0.3s ease;
+}
+
+.experience-item:hover .exp-item-bar {
+  background-color: #1e6fb1;
+}
+
+.exp-item-body {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 15px;
+}
+
+.exp-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.exp-info {
+  flex: 1;
+}
+
+.exp-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.exp-position {
+  font-weight: normal;
+  font-size: 16px;
+  color: #555555;
+}
+
+.exp-mentor {
+  font-size: 13px;
+  color: #888888;
+  margin-bottom: 1px;
+}
+
+.exp-period {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.bio {
+  padding: 20px;
+}
+
+/* New bio layout for desktop */
+.bio-layout {
+  display: flex;
+  gap: 30px;
+  margin-top: 0;
+  padding:20px;
+}
+
+.bio-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 180px;
+}
+
+.bio-right {
+  flex: 1;
+}
+
+/* Profile image interactive container - desktop only */
+@media (min-width: 601px) {
+  .profile-img-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .profile-overlay i {
+    color: white;
+    font-size: 24px;
+    animation: rotateHint 2s linear infinite;
+  }
+
+  .profile-img-container:hover .profile-overlay {
+    opacity: 1;
+  }
+
+  @keyframes rotateHint {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+  }
+}
+
+.name-info {
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: bold;
+  margin: 0;
+}
+
+.bio-text {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.bio-right .random-thoughts {
+  margin: 20px 0 15px 0;
+}
+
+.bio-right .random-thoughts h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.bio-right .thoughts-list {
+  margin-left: 0;
+}
+
+.bio-right .thoughts-list div {
+  margin-bottom: 6px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.bio-right .links {
+  text-align: left;
+  margin-top: 0;
+}
+
+.bio-right .links a {
+  text-decoration: none;
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+
+/* News section styling */
+.news-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.news-item {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.news-item-bar {
+  width: 5px;
+  flex-shrink: 0;
+  background-color: #d0d0d0;
+  transition: background-color 0.3s ease;
+}
+
+.news-item:hover .news-item-bar {
+  background-color: #1e6fb1;
+}
+
+.news-item-body {
+  padding: 0 0 0 10px;
+}
+
+.news-date {
+  font-weight: bold;
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.news-item:hover .news-date {
+  color: #1e6fb1;
+}
+
+.news-content {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Service section styling */
+.service-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.service-item {
+  background-color: #ffffff;
+  border: 1px solid #efeeee;
+  padding: 20px;
+  margin-bottom: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.service-item:hover {
+  background-color: #f1f1f1;
+}
+
+.service-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #666666;
+}
+
+.service-content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.service-tag {
+  display: inline-block;
+  padding: 6px 10px;
+  font-weight: 700;
+  background: #026dab;
+  color: #ffffff;
+}
+
+.service-year {
+  display: inline-block;
+  padding: 6px 10px;
+  background: #d8efff;
+  color: #4a4a4a;
+  font-weight: 700;
+}
+
+.service-content ul {
+  margin-left: 0;
+}
+
+.service-content ul li {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.buttom {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #8c8c8c;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.buttom:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.bio-button {
+  background-color: #3589cd !important;
+  color: #ffffff !important;
+}
+
+.bio-button:hover {
+  background-color: #ff6200 !important;
+  color: #ffffff !important;
+}
+
+.misc-button {
+  background-color: #ffbb00 !important;
+  color: #ffffff !important;
+}
+
+.misc-button:hover {
+  background-color: #ffecaf !important;
+  color: #000000 !important;
+}
+
+/* Print styles */
+@media print {
+  * {
+    overflow: visible !important;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  .profile-img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  .paper-container,
+  .experience-container {
+    page-break-inside: avoid;
+  }
+
+  .mobile-component,
+  .desktop-component {
+    display: none !important;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+}
+
+/* Author links styling - only apply to author paragraphs, not button paragraphs */
+.paper-container p:not(.paper-links) a {
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+.paper-container p:not(.paper-links) a:hover {
+  color: #ff6200;
+  transition: all 0.2s ease;
+}

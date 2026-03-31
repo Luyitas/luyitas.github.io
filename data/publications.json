@@ -1,0 +1,61 @@
+[
+  {
+    "id": "EgoSim",
+    "title": "EgoSim: Egocentric World Simulator for Embodiment Interaction Generation",
+    "authors": [
+      {"name": "Jinkun Hao", "isCoFirst": true},
+      {"name": "Mingda Jia", "isCoFirst": true, "isHighlight": true},
+      {"name": "Ruiyan Wang"},
+      {"name": "Xihui Liu"},
+      {"name": "Ran Yi"},
+      {"name": "Lizhuang Ma"},
+      {"name": "Jiangmiao Pang"},
+      {"name": "Xudong Xu"}
+    ],
+    "venue": "Arxiv 2026",
+    "venueType": "arxiv",
+    "image": "images/egosim.png",
+    "links": {
+      "paper": "",
+      "project": "https://egosimulator.github.io/"
+    },
+    "year": 2026,
+    "show": true
+  },
+  {
+    "id": "InterProDa",
+    "title": "Orchestrating the Symphony of Prompt Distribution Learning for Human-Object Interaction Detection",
+    "authors": [
+      {"name": "Mingda Jia", "isHighlight": true},
+      {"name": "Liming Zhao"},
+      {"name": "Ge Li"},
+      {"name": "Yun Zheng"}
+    ],
+    "venue": "AAAI 2025",
+    "venueType": "AAAI",
+    "image": "images/interproda.png",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.08506"
+    },
+    "year": 2025,
+    "show": true
+  },
+  {
+    "id": "ContextHOI",
+    "title": "ContextHOI: Spatial Context Learning for Human-Object Interaction Detection",
+    "authors": [
+      {"name": "Mingda Jia", "isHighlight": true},
+      {"name": "Liming Zhao"},
+      {"name": "Ge Li"},
+      {"name": "Yun Zheng"}
+    ],
+    "venue": "AAAI 2025",
+    "venueType": "AAAI",
+    "image": "images/contextHOI.png",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.09050"
+    },
+    "year": 2025,
+    "show": true
+  }
+]

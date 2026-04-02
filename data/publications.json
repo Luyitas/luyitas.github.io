@@ -16,7 +16,7 @@
     "venueType": "arxiv",
     "image": "images/egosim.png",
     "links": {
-      "paper": "",
+      "paper": "https://arxiv.org/abs/2604.01001",
       "project": "https://egosimulator.github.io/"
     },
     "description": "- We first introduce a scalable egocentric world simulator that generates in-the-wild embodied interactions.",

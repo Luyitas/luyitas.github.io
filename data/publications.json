@@ -17,7 +17,8 @@
     "image": "images/egosim.png",
     "links": {
       "paper": "https://arxiv.org/abs/2604.01001",
-      "project": "https://egosimulator.github.io/"
+      "project": "https://egosimulator.github.io/",
+      "code": "https://github.com/jinkun-hao/EgoSim"
     },
     "description": "- We first introduce a scalable egocentric world simulator that generates in-the-wild embodied interactions.",
     "year": 2026,

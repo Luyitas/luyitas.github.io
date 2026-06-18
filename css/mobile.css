@@ -114,6 +114,20 @@ section {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.ECCV2026 {
+  background-color: #7c3aed;
+  padding: 6px 12px;
+  display: inline-block;
+  color: #ffffff;
+  flex-shrink: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .insub {
   background-color: #858585;
   padding: 6px 12px;

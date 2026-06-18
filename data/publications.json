@@ -12,8 +12,8 @@
       {"name": "Jiangmiao Pang"},
       {"name": "Xudong Xu"}
     ],
-    "venue": "Arxiv 2026",
-    "venueType": "arxiv",
+    "venue": "ECCV 2026",
+    "venueType": "ECCV2026",
     "image": "images/egosim.png",
     "links": {
       "paper": "https://arxiv.org/abs/2604.01001",

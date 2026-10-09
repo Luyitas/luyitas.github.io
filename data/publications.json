@@ -1,5 +1,26 @@
 [
   {
+    "id": "RecursiveGameCreator",
+    "title": "Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness",
+    "authors": [
+      {"name": "Jiajun Chen", "isCoFirst": true},
+      {"name": "Haoyu Wu", "isCoFirst": true},
+      {"name": "Mingda Jia", "isCoFirst": true, "isHighlight": true},
+      {"name": "Xihui Liu"}
+    ],
+    "venue": "arXiv 2026",
+    "venueType": "arxiv",
+    "image": "images/recursive-game-creator.png",
+    "links": {
+      "paper": "https://arxiv.org/abs/2610.08621",
+      "project": "https://imbaldy.github.io/recursive-game-creator/",
+      "code": "https://github.com/IMBALDY/RecursiveGameCreator"
+    },
+    "description": "- We introduce an experience-oriented harness that recursively designs, builds, playtests, and reviews games to improve the player experience.",
+    "year": 2026,
+    "show": true
+  },
+  {
     "id": "EgoSim",
     "title": "EgoSim: Egocentric World Simulator for Embodiment Interaction Generation",
     "authors": [

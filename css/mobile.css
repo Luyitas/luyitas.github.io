@@ -295,6 +295,12 @@ hr {
   gap: 12px;
 }
 
+.exp-item-body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .exp-logo {
   width: 50px;
   height: 50px;
@@ -324,9 +330,6 @@ hr {
 }
 
 .exp-period {
-  position: absolute;
-  top: 12px;
-  right: 12px;
   font-size: 11px;
   color: #666666;
   font-weight: normal;
